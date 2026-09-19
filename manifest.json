@@ -1,9 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Universal Web Culler",
-  "version": "1.0.0",
-  "description": "Automatically culls off-screen elements using content-visibility to drastically reduce CPU, GPU, and RAM usage on heavy websites.",
-  "permissions": ["activeTab"],
+  "version": "1.1.0",
+  "description": "Automatically culls off-screen elements using content-visibility to drastically reduce CPU, GPU, and RAM usage.",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
