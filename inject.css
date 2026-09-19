@@ -1,0 +1,5 @@
+/* Universal class injected to cull off-screen elements */
+.web-cull-element {
+  content-visibility: auto !important;
+  contain-intrinsic-size: auto 500px !important;
+}
